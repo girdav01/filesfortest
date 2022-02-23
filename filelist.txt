@@ -1,0 +1,12 @@
+hello.c
+hello.exe
+hello-exe-base64.gif
+hello-exe-fake-ext.jpg
+test-bat.bat
+test-docx.docx
+test-gif.gif
+test-jpg.jpg
+test-ps1.ps1
+test-txt.txt
+test-vbs.vbs
+test-zip-fake-dat.zip
