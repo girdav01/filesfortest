@@ -1,1 +1,0 @@
-PsExec.exe -accepteula \\targethost -u account -p password -d "C:\Program Files\Internet Explorer\iexplore.exe" hacker.org
