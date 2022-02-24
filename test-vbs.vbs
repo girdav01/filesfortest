@@ -26,7 +26,7 @@ Set oWMI = GetObject("WinMgmts://" & sIPaddress & "/root/cimv2")
 Set cPatches = oWMI.ExecQuery("SELECT * FROM Win32_QuickFixEngineering")
 
 For Each oPatch In cPatches
-    WScript.Echo oPatch.HotFixID & vbTab & oPatch.CSName & vbTab & sIPaddress
+    'WScript.Echo oPatch.HotFixID & vbTab & oPatch.CSName & vbTab & sIPaddress
 Next
 
 
