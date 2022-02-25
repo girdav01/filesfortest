@@ -77,7 +77,6 @@ foreach($line in Get-Content $targetFullPath) {
     $sourcetPath = join-path $telemetry $line
     #copy files from sourcetPath to destination : telemetrycopy
     Copy-Item -Path $sourcetPath -Destination $telemetrycopy
-
 }
 Start-Sleep 5
 Write-Host "Add Local user to test ACL modifications"
@@ -107,8 +106,6 @@ foreach($line in Get-Content $targetFullPath) {
     $sourcetPath = join-path $telemetry $line
     #Move files from sourcetPath to destination : $telemetrymove
     Move-Item -Path $sourcetPath -Destination $telemetrymove
-
-
 }
 
 Start-Sleep 5
@@ -118,6 +115,7 @@ foreach($line in Get-Content $targetFullPath) {
     $sourcetPath = join-path $telemetrycopy $line
     Remove-Item $sourcetPath -Force    
 }
+
 Write-Host "Deleting folders"
 Remove-Item $telemetrycopy -Recurse -Force 
 Remove-Item $telemetrymove -Recurse -Force
